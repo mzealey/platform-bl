@@ -9,6 +9,9 @@
 [env:stable]
 platform = bl
 board = bl602
+framework = arduino
+platform_packages = framework-arduinobouffalo @ https://github.com/mzealey/ArduinoCore-bouffalo.git
+        framework-bl-iot-sdk @ https://github.com/mzealey/bl_iot_sdk.git
 ...
 ```
 
