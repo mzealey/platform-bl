@@ -1,8 +1,4 @@
-# platform-gd32v
-[![Build Status](https://travis-ci.org/sipeed/platform-gd32v.svg?branch=master)](https://travis-ci.org/sipeed/platform-gd32v)
-[![Build status](https://ci.appveyor.com/api/projects/status/x71h1eyhiljmngpo?svg=true)](https://ci.appveyor.com/project/btx000/platform-gd32v)
-
-# Usage
+# platform-bl
 
 1. [Install PlatformIO](http://platformio.org)
 2. Create PlatformIO project and configure a platform option in [platformio.ini](http://docs.platformio.org/page/projectconf.html) file:
@@ -11,8 +7,8 @@
 
 ```ini
 [env:stable]
-platform = gd32v
-board = ...
+platform = bl
+board = bl602
 ...
 ```
 
@@ -20,7 +16,7 @@ board = ...
 
 ```ini
 [env:development]
-platform = https://github.com/sipeed/platform-gd32v.git
+platform = https://github.com/mzealey/platform-bl.git
 board = ...
 ...
 ```

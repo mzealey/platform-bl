@@ -1,16 +1,13 @@
 {
-    "name": "gd32v",
-    "title": "GigaDevice GD32V",
-    "version": "1.2.1",
-    "description": "The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.",
-    "homepage": "https://www.gigadevice.com/products/microcontrollers/gd32/risc-v/",
+    "name": "bl",
+    "title": "Bouffalo Labs",
+    "version": "0.0.1",
+    "description": "",
+    "homepage": "",
     "keywords": [
         "dev-platform",
-        "GigaDevice",
-        "GD32V",
+        "Bouffalo Labs",
         "RISC-V",
-        "Sipeed",
-        "Longan",
         "32bit"
     ],
     "license": "Apache-2.0",
@@ -19,52 +16,41 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/sipeed/platform-gd32v.git"
+        "url": "https://github.com/mzealey/platform-bl.git"
     },
     "authors": [{
-        "name": "Sipeed",
-        "email": "support@sipeed.com",
-        "url": "https://www.sipeed.com"
+        "name": "Mark Zealey",
+        "email": "mark@markandruth.co.uk"
     }],
     "frameworks": {
-        "gd32vf103-sdk": {
-            "package": "framework-gd32vf103-sdk",
-            "script": "builder/frameworks/firmware_library.py",
-            "description": "GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package",
-            "homepage": "https://github.com/riscv-mcu/GD32VF103_Firmware_Library",
-            "title": "GigaDevice GD32V SDK"
-        },
         "arduino": {
-            "package": "framework-arduino-gd32v",
+            "package": "framework-arduinobouffalo",
             "script": "builder/frameworks/arduino.py"
         }
     },
+    "debug":{
+        "svd_path": "soc602_reg.svd"
+    },
     "packages": {
-        "framework-gd32vf103-sdk": {
-            "optional": true,
-            "type": "framework",
-            "owner": "platformio",
-            "version": "~1.0.0"
-        },
-        "framework-arduino-gd32v": {
+        "framework-arduinobouffalo": {
             "optional":true,
             "type": "framework",
             "owner": "platformio",
-            "version": "~0.1.1"
+            "version": "~0.0.1"
         },
-        "tool-openocd-gd32v": {
+        "tool-openocd-bl": {
             "optional": true,
             "type": "uploader",
             "owner": "platformio",
             "version": "~0.1.1"
         },
-        "tool-gd32vflash": {
+        "tool-blflash": {
             "type": "uploader",
             "optional": true,
             "owner": "platformio",
             "version": "~0.1.0"
         },
-        "toolchain-gd32v": {
+        "toolchain-bl": {
             "type": "toolchain",
             "owner": "platformio",
             "version": "~9.2.0"

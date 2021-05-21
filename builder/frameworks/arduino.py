@@ -6,9 +6,9 @@ env = DefaultEnvironment()
 
 board = env.BoardConfig()
 
-FRAMEWORK_DIR = env.PioPlatform().get_package_dir("framework-arduino-gd32v")
+FRAMEWORK_DIR = env.PioPlatform().get_package_dir("framework-arduinobouffalo")
 assert FRAMEWORK_DIR and isdir(FRAMEWORK_DIR)
-SDK_DIR = join(FRAMEWORK_DIR, "cores", "arduino", "GD32VF103_Firmware_Library")
+SDK_DIR = join(FRAMEWORK_DIR, "cores", "bl602")
 
 env.SConscript("_bare.py", exports="env")
 
@@ -72,4 +72,3 @@ libs.append(envsafe.BuildLibrary(
 
 
 env.Prepend(LIBS=libs)
-
