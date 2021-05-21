@@ -1,6 +1,6 @@
 from platformio.managers.platform import PlatformBase
 
-class Gd32vPlatform(PlatformBase):
+class BlPlatform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         board = variables.get("board")
@@ -87,7 +87,7 @@ class Gd32vPlatform(PlatformBase):
                 "-s", "$PACKAGE_DIR/share/openocd/scripts",
                 "-f", "interface/%s.cfg" % openocd_interface,
                 "-c", "transport select jtag",
-                "-f", "target/gd32vf103.cfg"
+                "-f", "target/bl602.cfg"
             ]
             server_args.append("-c")
             if link in ["um232h"]:
