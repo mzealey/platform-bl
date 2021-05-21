@@ -33,33 +33,19 @@
     },
     "packages": {
         "framework-arduinobouffalo": {
-            "optional":true,
             "type": "framework",
             "owner": "platformio",
             "version": "~0.0.1"
         },
-        "tool-openocd-bl": {
-            "optional": true,
-            "type": "uploader",
+        "framework-bl-iot-sdk": {
+            "type": "framework",
             "owner": "platformio",
-            "version": "~0.1.1"
+            "version": "~0.0.1"
         },
-        "tool-blflash": {
-            "type": "uploader",
-            "optional": true,
-            "owner": "platformio",
-            "version": "~0.1.0"
-        },
-        "toolchain-bl": {
+        "toolchain-riscv": {
             "type": "toolchain",
             "owner": "platformio",
-            "version": "~9.2.0"
-        },
-        "tool-dfuutil": {
-            "type": "uploader",
-            "optional": true,
-            "owner": "platformio",
-            "version": "~1.9.200310"
+            "version": "~1.80300.0"
         }
     }
 

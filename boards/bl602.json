@@ -1,25 +1,21 @@
 {
     "build": {
-        "arduino": {
-            "ldscript": "GD32VF103xB.lds"
-        },
-        "f_cpu": "108000000L",
+        "f_cpu": "240000000L",
         "hwids": [
             [
                 "0x28e9",
                 "0x0189"
             ]
         ],
-        "mabi": "ilp32",
-        "march": "rv32imac",
-        "mcmodel": "medlow",
-        "mcu": "GD32VF103CBT6",
-        "variant": "sipeed-longan-nano",
-        "board_def": "BOARD_SIPEED_LONGAN_NANO",
+        "mabi": "ilp32f",
+        "march": "rv32imfc",
+        "mcu": "bl602",
+        "variant": "bl602",
+        "board_def": "BOARD_BL602",
         "hxtal_value": "8000000"
     },
     "debug":{
-        "svd_path": "GD32VF103.svd"
+        "svd_path": "soc602_reg.svd"
     },
     "frameworks": [
         "arduino"
@@ -30,5 +26,6 @@
         "maximum_size": 131072,
         "protocol": "serial"
     },
-    "vendor": "Bouffalo Labs"
+    "vendor": "Bouffalo Labs",
+    "url": "https://TODO"
 }
